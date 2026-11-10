@@ -1,0 +1,157 @@
+@font-face {
+    font-family: Oswald;
+    src: url(../fonts/owswald/static/Oswald-Medium.ttf);
+}
+
+body {
+    background-color: transparent;
+}
+
+.site-footer {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(10, 10, 57);
+    /* padding: 50px 20px; */
+    display: flex;
+    /* flex-direction: column; */
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.mailing-section {
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-flow: column;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    gap: 17px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 50px;
+}
+
+.mailing-section h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 45px;
+    color: rgb(0, 172, 235);
+    margin-bottom: 10px;
+}
+
+.mailing-subtitle {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.mailing-form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 8px;
+}
+
+.mailing-form label {
+    font-size: 13px;
+}
+
+.mailing-form input[type="email"] {
+    width: 100%;
+    height: 35px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+    font-size: 15px;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+.checkbox-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.mailing-form button {
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.mailing-form button:hover {
+    opacity: 0.9;
+}
+
+
+.footer-container {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
+    max-width: 1200px;
+    /* padding-top: 30px; */
+    height: 50%;
+}
+
+.footer-email a {
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    transition: opacity 0.3s ease;
+}
+
+.footer-email a:hover {
+    opacity: 0.8;
+}
+
+.footer-socials {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.footer-socials a {
+    color: #ffffff;
+    font-size: 16px;
+    text-decoration: none;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.footer-socials a:hover {
+    opacity: 0.7;
+    transform: translateY(-2px);
+}
+
+.footer-copy p {
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    text-align: center;
+}
+
+.footer-copy a {
+    color: #ffffff;
+    text-decoration: underline;
+    transition: opacity 0.3s ease;
+}
+
+.footer-copy a:hover {
+    opacity: 0.8;
+}

@@ -1,0 +1,114 @@
+a {
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: Oswald;
+    src: url(../fonts/owswald/static/Oswald-Medium.ttf);
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat/static/Montserrat-Light.ttf);
+}
+
+.header-container {
+    width: 100%;
+    height: 200px;
+    /* background-color: rgb(64, 64, 96); */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Logo {
+    width: 25%;
+    height: 200px;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: end;
+    gap: 25px;
+    align-items: center;
+}
+
+.Logo-hd a {
+    color: white;
+}
+
+.Logo-hd svg path {
+    fill: white !important;
+}
+
+.Logo-hd svg {
+    width: 120px;
+    height: auto;
+}
+
+.txt-hd {
+    font-size: 18px;
+}
+
+.txt-h2 {
+    margin-bottom: 10px;
+}
+
+.txt-h2 a {
+    font-family: 'Oswald', sans-serif;
+    color: white;
+}
+
+.txt-p a {
+    font-size: 17px;
+    color: white;
+}
+
+.txt-hd a {
+    text-decoration: none;
+}
+
+/* მენიუს და სოციალური ქსელების განლაგება */
+.links-hd {
+    margin-right: 50px; 
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    gap: 35px; /* მანძილი ტექსტურ მენიუსა და აიქონების ბლოკს შორის */
+}
+
+.links-html a {
+    color: white;
+    text-decoration: none;
+    margin-right: 25px;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    transition: color 0.3s ease;
+}
+
+.links-html a:hover {
+   color: rgb(77, 178, 228);
+}
+
+/* სოციალური აიქონების ბლოკის flex განლაგება */
+.links-social {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* დაშორება აიქონებს შორის */
+}
+
+/* აიქონების ზომა და ფერი */
+.links-social svg {
+    width: 18px;
+    height: 18px;
+    display: block;
+}
+
+.links-social svg path {
+    fill: white !important;
+    transition: fill 0.3s ease;
+}
+
+/* მაუსის მიტანისას (hover) ფერის ცვლილება */
+.links-social a:hover svg path {
+    fill: rgb(77, 178, 228) !important;
+}
