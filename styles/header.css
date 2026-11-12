@@ -65,7 +65,7 @@ a {
     text-decoration: none;
 }
 
-/* მენიუს და სოციალური ქსელების განლაგება */
+
 .links-hd {
     margin-right: 50px; 
 }
@@ -73,7 +73,7 @@ a {
 .links {
     display: flex;
     align-items: center;
-    gap: 35px; /* მანძილი ტექსტურ მენიუსა და აიქონების ბლოკს შორის */
+    gap: 35px; 
 }
 
 .links-html a {
@@ -89,14 +89,14 @@ a {
    color: rgb(77, 178, 228);
 }
 
-/* სოციალური აიქონების ბლოკის flex განლაგება */
+
 .links-social {
     display: flex;
     align-items: center;
-    gap: 15px; /* დაშორება აიქონებს შორის */
+    gap: 15px; 
 }
 
-/* აიქონების ზომა და ფერი */
+
 .links-social svg {
     width: 18px;
     height: 18px;
@@ -108,7 +108,7 @@ a {
     transition: fill 0.3s ease;
 }
 
-/* მაუსის მიტანისას (hover) ფერის ცვლილება */
+
 .links-social a:hover svg path {
     fill: rgb(77, 178, 228) !important;
 }
