@@ -17,11 +17,16 @@ body a{
     font-family: OswaldLight;
     src: url(./fonts/owswald/static/Oswald-Light.ttf);
 }
+@font-face {
+    font-family: MontserratLight;
+    src: url(../fonts/Montserrat/static/Montserrat-Light.ttf);
+}
 .container{
     width: 100%;
     height: 1900px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 .header-iframe {
     position: relative;
@@ -36,7 +41,7 @@ body a{
     border: none;
 }
 .Upd-Main{
-    background-color: brown;
+    /* background-color: brown; */
     width: 60%;
     height: auto;
     
@@ -52,14 +57,14 @@ body a{
 .link-search-row{
     height: 110px;
     width: 100%;
-    background-color: yellow;
+    /* background-color: yellow; */
     display: flex;
     justify-content: space-between;
 }
 .links{
     width: 40%;
     height: 100%;
-    background-color: rgb(211, 12, 191);
+    /* background-color: rgb(211, 12, 191); */
     display: flex;
     /* justify-content: center; */
     align-items: center;
@@ -80,7 +85,7 @@ body a{
 .search-bar{
     width: 30%;
     height: 100%;
-    background-color: rgb(9, 67, 9);
+    /* background-color: rgb(9, 67, 9); */
     margin-left: auto;
     display: flex;
     align-items: center;
@@ -90,3 +95,269 @@ body a{
 .search-icon{
     color: aqua;
 }
+.issue-box{
+    /* background-color: darkslategrey; */
+    width: 100%;
+    height: 330px;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid white;
+    margin-bottom: 50px;
+}
+.issue-box-photo{
+width: 50%;
+    height: 100%;
+}
+.issue-box-photo img{
+    width: 100%;
+    height: 100%;
+    
+}
+.issue-box-about{
+width: 50%;
+    height: 100%;
+display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-container{
+    /* background-color: hotpink; */
+    height: 90%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+.profile{
+    /* background-color: mediumspringgreen; */
+width: 100%;
+height: 17%;
+display: flex;
+flex-direction: row;
+}
+.profile-picture{
+    width: 16%;
+    height: 100%;
+}
+.profile-picture img{
+    width: 80%;
+    height: 100%;
+    border-radius: 100%;
+}
+.profile-details{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    opacity: 0.6;
+    font-size: 11px;
+    margin-top: 11px;
+}
+.share-icon{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    
+}
+.share-icon svg{
+    width: 10%;
+    height: 100%;
+    
+}
+.title{
+    /* background-color: tomato; */
+width: 100%;
+height: 23%;
+font-family: 'Oswald', sans-serif;
+font-size: 30px;
+color: white;
+padding-top: 10px;
+}
+.description{
+    /* background-color: slateblue; */
+width: 100%;
+height: 37%;
+font-family: 'MontserratLight', sans-serif;
+    color: white;
+    font-size: 14px;
+    opacity: 0.6;
+    padding: 14px 0px;
+    border-bottom: 1px solid white;
+}
+.vidgets{
+    /* background-color: khaki; */
+width: 100%;
+height: 23%;
+display: flex;
+flex-direction: row;
+
+}
+.views{
+    height: 100%;
+    width: 50%;
+    font-size: 13px;
+    color: white;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.like-button{
+height: 100%;
+width: 50%;
+display: flex;
+justify-content: end;
+align-items: center;
+}
+
+/* From Uiverse.io by catraco */ 
+.heart-container {
+  --heart-color: rgb(255, 91, 137);
+  position: relative;
+  width: 10%;
+  height: 10%;
+  transition: .3s;
+}
+
+.heart-container .checkbox {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 20;
+  cursor: pointer;
+}
+
+.heart-container .svg-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heart-container .svg-outline,
+        .heart-container .svg-filled {
+  fill: var(--heart-color);
+  position: absolute;
+}
+
+.heart-container .svg-filled {
+  animation: keyframes-svg-filled 1s;
+  display: none;
+}
+
+.heart-container .svg-celebrate {
+  position: absolute;
+  animation: keyframes-svg-celebrate .5s;
+  animation-fill-mode: forwards;
+  display: none;
+  stroke: var(--heart-color);
+  fill: var(--heart-color);
+  stroke-width: 2px;
+}
+
+.heart-container .checkbox:checked~.svg-container .svg-filled {
+  display: block
+}
+
+.heart-container .checkbox:checked~.svg-container .svg-celebrate {
+  display: block
+}
+
+@keyframes keyframes-svg-filled {
+  0% {
+    transform: scale(0);
+  }
+
+  25% {
+    transform: scale(1.2);
+  }
+
+  50% {
+    transform: scale(1);
+    filter: brightness(1.5);
+  }
+}
+
+@keyframes keyframes-svg-celebrate {
+  0% {
+    transform: scale(0);
+  }
+
+  50% {
+    opacity: 1;
+    filter: brightness(1.5);
+  }
+
+  100% {
+    transform: scale(1.4);
+    opacity: 0;
+    display: none;
+  }
+}
+
+
+.footer-container {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
+    max-width: 1200px;
+    
+    
+    min-height: 300px; 
+    padding: 50px 0;   
+}
+
+.footer-email a {
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    transition: opacity 0.3s ease;
+}
+
+.footer-email a:hover {
+    opacity: 0.8;
+}
+
+.footer-socials {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.footer-socials a {
+    color: #ffffff;
+    font-size: 16px;
+    text-decoration: none;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.footer-socials a:hover {
+    opacity: 0.7;
+    transform: translateY(-2px);
+}
+
+.footer-copy p {
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    text-align: center;
+}
+
+.footer-copy a {
+    color: #ffffff;
+    text-decoration: underline;
+    transition: opacity 0.3s ease;
+}
+
+.footer-copy a:hover {
+    opacity: 0.8;
+}
+
+
