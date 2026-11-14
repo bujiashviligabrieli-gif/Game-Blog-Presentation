@@ -6,14 +6,31 @@
     font-family: OswaldLight;
     src: url(./fonts/owswald/static/Oswald-Light.ttf);
 }
-
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat/static/Montserrat-Light.ttf);
+}
+body a{
+    text-decoration: none;
+}
 .container {
     width: 100%;
 }
-
+.header-iframe {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 1200px;
+    height: 200px;
+    z-index: 10;                 
+    display: block;
+    border: none;
+}
 .backgrounds {
     position: relative;
-    height: 500vh;
+    height: auto;
 }
 
 .hero-text-box {
@@ -43,7 +60,7 @@
     position: sticky;
     top: 0;
     width: 100%;
-    height: 250vh;
+    height: 2000px;
     z-index: 1;
 }
 
@@ -59,7 +76,7 @@
     position: sticky;
     top: 0;
     width: 100%;
-    height: 50vh;
+    height: 1306px;
     z-index: 2; 
 }
 
@@ -81,18 +98,7 @@
     box-sizing: border-box;
 }
 
-.header-iframe {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    max-width: 1200px;
-    height: 200px;
-    z-index: 10;                 
-    display: block;
-    border: none;
-}
+
 
 .About-us {
     width: 100%;
@@ -167,32 +173,59 @@
 }
 
 .Upd-img-1 {
+    
     width: 25%;
     height: 100%;
-    /* background-color: rgb(75, 75, 217); */
+    background-image: url(./images/84770f_3e8a581ece8b4ccca12d7f49880e1051~mv2.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+    display: flex;
+    flex-flow: column;
+    gap: 210px;
+    padding: 28px 10px 28px 10px;
 }
-.Upd-img-1 img{
-    width: 100%;
-    height: 100%;
+.Issue-Headline-Date{
+    font-family: 'OswaldLight', sans-serif;
+    color: white;
+}
+.Issue-Headline-Link a{
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-size: 27px;
+    opacity: 1;
+
+}
+.Issue-Headline-Link a:hover{
+    color: aqua;
 }
 .Upd-img-2 {
     width: 25%;
     height: 100%;
-    background-color: rgb(3, 234, 38);
+     background-image: url(./images/84770f_fb90404e629b4f249950d6b66895badb~mv2.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+    display: flex;
+    flex-flow: column;
+    gap: 210px;
+    padding: 28px 10px 28px 10px;
 }
-.Upd-img-2 img{
-    width: 100%;
-    height: 100%;
-}
+
+
 .Upd-img-3 {
     width: 25%;
     height: 100%;
-    background-color: rgb(231, 12, 227);
+     background-image: url(./images/84770f_c3b39afdc1fe43b5ab024b638e69d1cc~mv2.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+    display: flex;
+    flex-flow: column;
+    gap: 210px;
+    padding: 28px 10px 28px 10px;
 }
-.Upd-img-3 img{
-    width: 100%;
-    height: 100%;
-}
+
 .Upd-3 {
     width: 180px;
     height: 45px;
