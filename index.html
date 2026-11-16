@@ -15,6 +15,27 @@
         
         <iframe class="header-iframe" src="./pages/header.html" frameborder="0" scrolling="no"></iframe>
         
+          <div class="burger-btn" id="burgerBtn">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <div class="mobile-menu-overlay" id="mobileMenu">
+            <ul class="mobile-nav-list">
+                <li><a href="./index.html" class="active-link">Home</a></li>
+                <li><a href="./pages/updates.html">Updates</a></li>
+                <li><a href="./pages/roster.html">Roster</a></li>
+                <li><a href="./pages/contact.html">Contact</a></li>
+            </ul>
+            <div class="mobile-socials">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+
+
         <div class="hero-text-box">
             <h1>Revolutionizing<br>the eSports World</h1>
             <p>Official Home of REVO Competitive Gaming</p>
@@ -50,18 +71,19 @@
                 </div>
                 
                 <div class="Upd-2"> 
-                    <div class="Upd-img-1"> 
+                    <a href=""><div class="Upd-img-1"> 
                     <div class="Issue-Headline-Date"><p>May 16, 2023</p></div>
                     <div class="Issue-Headline-Link"><a href=""><p>Ultimate Warship: The Leviathan Carrier XT</p></a></div>
                     </div>
-                    <div class="Upd-img-2">
+                </a>
+                    <a href=""><div class="Upd-img-2">
                         <div class="Issue-Headline-Date"><p>May 16, 2023</p></div>
                     <div class="Issue-Headline-Link"><a href=""><p>Max out Your Exoskeleton & Never Die Again</p></a></div>
-                    </div>
-                    <div class="Upd-img-3">
+                    </div></a>
+                    <a href=""><div class="Upd-img-3">
                         <div class="Issue-Headline-Date"><p>May 16, 2023</p></div>
                     <div class="Issue-Headline-Link"><a href=""><p>How to Build a Lasting Moonrock Mine</p></a></div>
-                    </div>
+                    </div></a>
                 </div>
                 
                 <div class="Upd-3">
@@ -84,6 +106,26 @@
     </div>
 
 </div>
+  
+  <script>
+    const burgerBtn = document.getElementById('burgerBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const menuLinks = document.querySelectorAll('.mobile-nav-list a');
 
+    // ღილაკზე დაჭერისას გახსნა/დახურვა
+    burgerBtn.addEventListener('click', () => {
+        burgerBtn.classList.toggle('open');
+        mobileMenu.classList.toggle('active');
+    });
+
+    // ლინკზე დაჭერისას მენიუ ავტომატურად დაიხუროს
+    menuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            burgerBtn.classList.remove('open');
+            mobileMenu.classList.remove('active');
+        });
+    });
+</script> 
+  
 </body>
 </html>

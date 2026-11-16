@@ -199,6 +199,7 @@ flex-direction: row;
     justify-content: start;
     align-items: center;
     font-family: 'Montserrat', sans-serif;
+    opacity: 0.5;
 }
 
 .like-button{

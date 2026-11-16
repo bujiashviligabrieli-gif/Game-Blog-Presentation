@@ -1,3 +1,5 @@
+
+
 @font-face {
     font-family: Oswald;
     src: url(./fonts/owswald/static/Oswald-Medium.ttf);
@@ -10,12 +12,26 @@
     font-family: Montserrat;
     src: url(../fonts/Montserrat/static/Montserrat-Light.ttf);
 }
-body a{
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+}
+
+body a {
     text-decoration: none;
 }
+
 .container {
     width: 100%;
 }
+
+.burger-btn,
+.mobile-menu-overlay {
+    display: none;
+}
+
 .header-iframe {
     position: absolute;
     top: 0;
@@ -24,10 +40,11 @@ body a{
     width: 100%;
     max-width: 1200px;
     height: 200px;
-    z-index: 10;                 
+    z-index: 10;
     display: block;
     border: none;
 }
+
 .backgrounds {
     position: relative;
     height: auto;
@@ -39,6 +56,7 @@ body a{
     left: 17%;
     z-index: 4;
     max-width: 600px;
+    padding-right: 20px;
 }
 
 .hero-text-box h1 {
@@ -77,12 +95,12 @@ body a{
     top: 0;
     width: 100%;
     height: 1306px;
-    z-index: 2; 
+    z-index: 2;
 }
 
 .bg-Gamers img {
     width: 100%;
-    height: 100vh; 
+    height: 100vh;
     object-fit: cover;
     position: sticky;
     top: 0;
@@ -90,19 +108,18 @@ body a{
 
 .about-updates {
     position: absolute;
-    top: 100vh;                  
-    left: 0;                     
-    width: 100%;     
+    top: 100vh;
+    left: 0;
+    width: 100%;
     height: auto;
-    z-index: 5;                  
+    z-index: 5;
     box-sizing: border-box;
 }
 
 
-
 .About-us {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh; 
     display: flex;
     margin: 0 auto;
     background-color: rgb(20, 20, 95);
@@ -110,22 +127,22 @@ body a{
 
 .About-us-image {
     width: 50%;
-    height: 100%;
+    min-height: 100vh;
 }
 
 .About-us-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
 }
 
 .About-us-content {
     width: 50%;
-    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center; 
-    padding: 50px;           
+    justify-content: center;
+    padding: 50px;
     box-sizing: border-box;
     gap: 20px;
 }
@@ -144,92 +161,94 @@ body a{
     line-height: 1.6;
 }
 
+/* LATEST UPDATES SECTION */
 .Latest-updates {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background-color: rgb(13, 7, 67);
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    padding: 60px 20px;
+    box-sizing: border-box;
     margin: 0 auto;
 }
 
 .Upd-1 {
     width: 100%;
-    height: 25%;
+    margin-bottom: 40px;
     font-size: 50px;
     font-family: 'Oswald', sans-serif;
     color: aqua;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .Upd-2 {
     width: 100%;
-    height: 50%;
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     gap: 20px;
 }
 
-.Upd-img-1 {
-    
-    width: 25%;
-    height: 100%;
-    background-image: url(./images/84770f_3e8a581ece8b4ccca12d7f49880e1051~mv2.avif);
+
+.Upd-img-1, .Upd-img-2, .Upd-img-3 {
+    width: 30%;
+    min-height: 380px; 
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    opacity: 0.7;
+    opacity: 0.85;
     display: flex;
-    flex-flow: column;
-    gap: 210px;
-    padding: 28px 10px 28px 10px;
+    flex-direction: column;
+    justify-content: space-between; 
+    padding: 28px 20px;
+    box-sizing: border-box;
+    transition: opacity 0.3s ease;
 }
-.Issue-Headline-Date{
+
+.Upd-img-1:hover, .Upd-img-2:hover, .Upd-img-3:hover {
+    opacity: 1;
+}
+
+.Upd-img-1 {
+    background-image: url(./images/84770f_3e8a581ece8b4ccca12d7f49880e1051~mv2.avif);
+}
+
+.Upd-img-2 {
+    background-image: url(./images/84770f_fb90404e629b4f249950d6b66895badb~mv2.avif);
+}
+
+.Upd-img-3 {
+    background-image: url(./images/84770f_c3b39afdc1fe43b5ab024b638e69d1cc~mv2.avif);
+}
+
+.Issue-Headline-Date {
     font-family: 'OswaldLight', sans-serif;
     color: white;
+    font-size: 14px;
 }
-.Issue-Headline-Link a{
+
+.Issue-Headline-Link a {
     font-family: 'Oswald', sans-serif;
     color: white;
     font-size: 27px;
-    opacity: 1;
-
+    line-height: 1.2;
+    display: block;
 }
-.Issue-Headline-Link a:hover{
+
+.Issue-Headline-Link a:hover {
     color: aqua;
-}
-.Upd-img-2 {
-    width: 25%;
-    height: 100%;
-     background-image: url(./images/84770f_fb90404e629b4f249950d6b66895badb~mv2.avif);
-    background-size: cover;
-    background-repeat: no-repeat;
-    opacity: 0.7;
-    display: flex;
-    flex-flow: column;
-    gap: 210px;
-    padding: 28px 10px 28px 10px;
-}
-
-
-.Upd-img-3 {
-    width: 25%;
-    height: 100%;
-     background-image: url(./images/84770f_c3b39afdc1fe43b5ab024b638e69d1cc~mv2.avif);
-    background-size: cover;
-    background-repeat: no-repeat;
-    opacity: 0.7;
-    display: flex;
-    flex-flow: column;
-    gap: 210px;
-    padding: 28px 10px 28px 10px;
 }
 
 .Upd-3 {
     width: 180px;
     height: 45px;
-    margin: 30px auto 0 auto;
+    margin: 40px auto 0 auto;
     border: 2px solid rgb(82, 202, 223);
     border-radius: 25px;
     box-sizing: border-box;
@@ -240,16 +259,7 @@ body a{
     transition: background-color 0.3s ease;
 }
 
-.Upd-3 a {
-    text-decoration: none;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.link-to-upd {
+.Upd-3 a, .link-to-upd {
     width: 100%;
     height: 100%;
     display: flex;
@@ -272,27 +282,31 @@ body a{
     color: white;
 }
 
+
 .link-to-roster-hd {
     width: 100%;
     height: 100vh;
     display: flex;
-    flex-flow: column;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 70px;
+    gap: 40px;
     background-color: transparent;
+    text-align: center;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 .txt-roster p {
     font-family: 'Oswald', sans-serif;
     font-size: 95px;
     color: rgb(82, 202, 223);
+    margin: 0;
 }
 
 .link-to-roster {
-    width: 100px;
+    width: 140px;
     height: 45px;
-    margin: 30px auto 0 auto;
     border: 3px solid rgb(82, 202, 223);
     border-radius: 25px;
     box-sizing: border-box;
@@ -303,16 +317,7 @@ body a{
     transition: background-color 0.3s ease;
 }
 
-.link-to-roster a {
-    text-decoration: none;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.link-to-roster-a-txt {
+.link-to-roster a, .link-to-roster-a-txt {
     width: 100%;
     height: 100%;
     display: flex;
@@ -337,8 +342,228 @@ body a{
 
 .footer-iframe {
     width: 100%;
-    height: 728px; 
+    height: 728px;
     display: block;
     border: none;
     background-color: rgb(26, 26, 115);
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    .hero-text-box {
+        left: 8%;
+    }
+    .hero-text-box h1 {
+        font-size: 65px;
+    }
+    .Upd-img-1, .Upd-img-2, .Upd-img-3 {
+        width: 32%;
+        min-height: 320px;
+    }
+    .Issue-Headline-Link a {
+        font-size: 22px;
+    }
+}
+
+
+@media screen and (max-width: 936px) {
+    .header-iframe {
+        display: none !important;
+    }
+
+    
+    .burger-btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 21px;
+        position: fixed;
+        top: 30px;
+        right: 30px;
+        z-index: 1001; 
+        cursor: pointer;
+    }
+
+    .burger-btn .bar {
+        width: 100%;
+        height: 3px;
+        background-color: #ffffff;
+        transition: all 0.3s ease;
+        border-radius: 2px;
+    }
+
+    /* დაჭერისას X-ად გადაქცევის ანიმაცია */
+    .burger-btn.open .bar:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+
+    .burger-btn.open .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .burger-btn.open .bar:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+
+    
+    .mobile-menu-overlay {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #020826; 
+        z-index: 1000;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+    
+    .mobile-menu-overlay.active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .mobile-nav-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .mobile-nav-list a {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 24px;
+        color: #ffffff;
+        text-decoration: none;
+        letter-spacing: 0.5px;
+        transition: color 0.3s ease;
+    }
+
+    
+    .mobile-nav-list a.active-link,
+    .mobile-nav-list a:hover {
+        color: rgb(0, 172, 235);
+    }
+
+  
+    .mobile-socials {
+        margin-top: 50px;
+        display: flex;
+        gap: 25px;
+    }
+
+    .mobile-socials a {
+        color: #ffffff;
+        font-size: 18px;
+        transition: color 0.3s ease;
+    }
+
+    .mobile-socials a:hover {
+        color: rgb(0, 172, 235);
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    /* Hero სექცია */
+    .hero-text-box {
+        top: 30vh;
+        left: 5%;
+        max-width: 90%;
+    }
+    .hero-text-box h1 {
+        font-size: 48px;
+    }
+    .hero-text-box p {
+        font-size: 22px;
+    }
+
+    
+    .About-us {
+        flex-direction: column;
+        min-height: auto;
+    }
+    .About-us-image {
+        width: 100%;
+        min-height: 350px;
+        height: 45vh;
+    }
+    .About-us-content {
+        width: 100%;
+        padding: 40px 25px;
+    }
+    .About-us-txt-h1 h1 {
+        font-size: 38px;
+    }
+
+    
+    .Upd-1 {
+        font-size: 38px;
+        margin-bottom: 30px;
+    }
+    .Upd-2 {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+    .Upd-img-1, .Upd-img-2, .Upd-img-3 {
+        width: 90%;
+        max-width: 450px;
+        min-height: 280px;
+    }
+
+    
+    .link-to-roster-hd {
+        height: 70vh;
+        gap: 25px;
+    }
+    .txt-roster p {
+        font-size: 65px;
+    }
+
+    .bg-earth {
+        height: 1800px;
+    }
+    .bg-Gamers {
+        height: 1500px;
+    }
+
+
+    .footer-iframe {
+        height: 950px; 
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .hero-text-box h1 {
+        font-size: 36px;
+    }
+    .hero-text-box p {
+        font-size: 18px;
+    }
+    .About-us-txt-h1 h1, .Upd-1 {
+        font-size: 32px;
+    }
+    .Issue-Headline-Link a {
+        font-size: 20px;
+    }
+    .txt-roster p {
+        font-size: 50px;
+    }
+    .Upd-img-1, .Upd-img-2, .Upd-img-3 {
+        width: 100%;
+        min-height: 240px;
+    }
 }
