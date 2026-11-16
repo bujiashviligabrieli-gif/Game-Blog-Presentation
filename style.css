@@ -394,7 +394,7 @@ body a {
         border-radius: 2px;
     }
 
-    /* დაჭერისას X-ად გადაქცევის ანიმაცია */
+    
     .burger-btn.open .bar:nth-child(1) {
         transform: translateY(9px) rotate(45deg);
     }
