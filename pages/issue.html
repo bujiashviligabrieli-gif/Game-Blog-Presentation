@@ -5,93 +5,222 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="../styles/issue.css">
-    <title>Document</title>
+    <!-- სოციალური აიქონებისთვის (Footer და Burger Menu) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>REVO - Post</title>
 </head>
 <body>
 
+    
     <iframe class="header-iframe" src="../pages/header.html" frameborder="0" scrolling="no"></iframe>
-    <div class="container">
 
-<div class="Upd-Main">
+    
+    <div class="burger-btn" id="burgerBtn">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
 
-
-          <div class="link-search-row">
-          <div class="links"> 
-            <a href="./updates.html" target="_self">All Posts</a>
-            <a href="./updates.html" target="_self">Gaming</a>
-            <a href="./updates.html" target="_self">Tournaments</a>
+    <div class="mobile-menu-overlay" id="mobileMenu">
+        <ul class="mobile-nav-list">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./updates.html">Updates</a></li>
+            <li><a href="./roster.html">Roster</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+        <div class="mobile-socials">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
         </div>
-          <div class="search-bar">
-
-            <div class="search-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-</svg>
-</div>
-          </div>
-
     </div>
 
-<div class="Post">
-   
-    <div class="Post-Info">
-      
-       <div class="issue-box-about">
-        <div class="about-container">
-           <div class="profile">
-               <div class="profile-picture">
-                  <img src="../images/360_F_186293166_P4yk3uXQBDapbDFlR17ivpM6B1ux0fHG.jpg" alt="Profile">
-               </div>
-               <div class="profile-details">
-                 <p>Admin <br> May 16, 2023 : 1 min read</p>
-               </div>
-               <div class="share-icon">
-                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path fill="rgb(255, 255, 255)" d="M96 320C96 289.1 121.1 264 152 264C182.9 264 208 289.1 208 320C208 350.9 182.9 376 152 376C121.1 376 96 350.9 96 320zM264 320C264 289.1 289.1 264 320 264C350.9 264 376 289.1 376 320C376 350.9 350.9 376 320 376C289.1 376 264 350.9 264 320zM488 264C518.9 264 544 289.1 544 320C544 350.9 518.9 376 488 376C457.1 376 432 350.9 432 320C432 289.1 457.1 264 488 264z"/></svg>
-               </div>
-           </div>
-           <div class="title">
-            <p>Ultimate Warship: The Leviathan Carrier XT</p>
-           </div>
-           <div class="description">
-             <p>Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your audience to continue reading....</p>
-           </div>
-           <div class="issue-box-photo">
-          <img src="../images/84770f_3e8a581ece8b4ccca12d7f49880e1051~mv2.avif" alt="Spaceship">
-       </div>
-           <!-- <div class="vidgets">
-                <div class="views"><p>0 views</p></div>
-                <div class="like-button"> 
-                  <div class="heart-container" title="Like">
-            <input type="checkbox" class="checkbox" id="Give-It-An-Id">
-            <div class="svg-container">
-                <svg viewBox="0 0 24 24" class="svg-outline" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Zm-3.585,18.4a2.973,2.973,0,0,1-3.83,0C4.947,16.006,2,11.87,2,8.967a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,8.967a1,1,0,0,0,2,0,4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,8.967C22,11.87,19.053,16.006,13.915,20.313Z">
-                    </path>
-                </svg>
-                <svg viewBox="0 0 24 24" class="svg-filled" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Z">
-                    </path>
-                </svg>
-                <svg class="svg-celebrate" width="100" height="100" xmlns="http://www.w3.org/2000/svg">
-                    <polygon points="10,10 20,20"></polygon>
-                    <polygon points="10,50 20,50"></polygon>
-                    <polygon points="20,80 30,70"></polygon>
-                    <polygon points="90,10 80,20"></polygon>
-                    <polygon points="90,50 80,50"></polygon>
-                    <polygon points="80,80 70,70"></polygon>
-                </svg>
+    <div class="container">
+        <div class="Upd-Main">
+            <div class="link-search-row">
+                <div class="links"> 
+                    <a href="./updates.html" target="_self">All Posts</a>
+                    <a href="./updates.html" target="_self">Gaming</a>
+                    <a href="./updates.html" target="_self">Tournaments</a>
+                </div>
+                <div class="search-bar">
+                    <div class="search-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                        </svg>
+                    </div>
+                </div>
             </div>
-        </div>  </div>
-           </div> -->
-          </div>
-       </div>
 
+            <div class="Post">
+                <div class="Post-Info">
+                    <div class="issue-box-about">
+                        <div class="about-container">
+                            <div class="profile">
+                                <div class="profile-picture">
+                                    <img src="../images/360_F_186293166_P4yk3uXQBDapbDFlR17ivpM6B1ux0fHG.jpg" alt="Profile">
+                                </div>
+                                <div class="profile-details">
+                                    <span class="admin-name">Admin</span>
+                                    <span class="dot">.</span>
+                                    <span class="post-date">May 16, 2023</span>
+                                    <span class="dot">.</span>
+                                    <span class="read-time">1 min read</span>
+                                </div>
+                                <div class="share-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path fill="rgb(255, 255, 255)" d="M96 320C96 289.1 121.1 264 152 264C182.9 264 208 289.1 208 320C208 350.9 182.9 376 152 376C121.1 376 96 350.9 96 320zM264 320C264 289.1 289.1 264 320 264C350.9 264 376 289.1 376 320C376 350.9 350.9 376 320 376C289.1 376 264 350.9 264 320zM488 264C518.9 264 544 289.1 544 320C544 350.9 518.9 376 488 376C457.1 376 432 350.9 432 320C432 289.1 457.1 264 488 264z"/></svg>
+                                </div>
+                            </div>
+                            <div class="title">
+                                <p>Ultimate Warship: The Leviathan Carrier XT</p>
+                            </div>
+                            <div class="description">
+                                <p>Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your audience to continue reading....</p>
+                            </div>
+                            <div class="issue-box-photo">
+                                <img src="../images/84770f_3e8a581ece8b4ccca12d7f49880e1051~mv2.avif" alt="Spaceship">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text">
+                        <div class="text-1">
+                            <p>Welcome to your blog post. Use this space to connect with your readers and potential customers in a way that’s current and interesting. Think of it as an ongoing conversation where you can share updates about business, trends, news, and more.</p>
+                        </div>
+                        <div class="text-2">
+                            <p>“Do you have a design in mind for your blog? Whether you prefer a trendy postcard look or you’re going for a more editorial style blog - there’s a stunning layout for everyone.”</p>
+                        </div>
+                        <div class="text-3">
+                            <p>You’ll be posting loads of engaging content, so be sure to keep your blog organized with Categories that also allow visitors to explore more of what interests them. <br><br> <b>Create Relevant Content</b> <br><br> Writing a blog is a great way to position yourself as an authority in your field and captivate your readers’ attention. Do you want to improve your site’s SEO ranking? Consider topics that focus on relevant keywords and relate back to your website or business. You can also add hashtags (#vacation <a href="./updates.html">#dream</a> <a href="./updates.html"> #summer</a>) throughout your posts to reach more people, and help visitors search for relevant content. <br><br> Blogging gives your site a voice, so let your business’ personality shine through. Choose a great image to feature in your post or add a video for extra engagement. Are you ready to get started? Simply create a new post now. <br><br><br> <a class="tournament-link" href="./updates.html">Tournaments</a></p>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z"/></svg>
+                        </a>
+                        <a href="#" aria-label="X">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </a>
+                        <a href="#" aria-label="LinkedIn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M6.94 5a2 2 0 1 1-4-.002 2 2 0 0 1 4 .002zM7 8.48H3V21h4V8.48zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91l.04-1.68z"/></svg>
+                        </a>
+                        <a href="#" aria-label="Copy Link">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+                        </a>
+                    </div>
+
+                    <div class="vidgets">
+                        <div class="views"><p>0 views</p></div>
+                        <div class="like-button"> 
+                            <div class="heart-container" title="Like">
+                                <input type="checkbox" class="checkbox" id="likeMain">
+                                <div class="svg-container">
+                                    <svg viewBox="0 0 24 24" class="svg-outline" xmlns="http://www.w3.org/2000/svg"><path d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Zm-3.585,18.4a2.973,2.973,0,0,1-3.83,0C4.947,16.006,2,11.87,2,8.967a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,8.967a1,1,0,0,0,2,0,4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,8.967C22,11.87,19.053,16.006,13.915,20.313Z"></path></svg>
+                                    <svg viewBox="0 0 24 24" class="svg-filled" xmlns="http://www.w3.org/2000/svg"><path d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Z"></path></svg>
+                                    <svg class="svg-celebrate" width="100" height="100" xmlns="http://www.w3.org/2000/svg"><polygon points="10,10 20,20"></polygon><polygon points="10,50 20,50"></polygon><polygon points="20,80 30,70"></polygon><polygon points="90,10 80,20"></polygon><polygon points="90,50 80,50"></polygon><polygon points="80,80 70,70"></polygon></svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="Recent-Posts">
+            <div class="txt-post">
+                <p>Recent Posts</p>
+            </div>
+            <div class="link-see-all">
+                <a href="./updates.html">See All</a>
+            </div>
+        </div>
+
+        <div class="Other-issues">
+            <div class="issue-cards-container">
+                <!-- პირველი ბარათი -->
+                <div class="issue-card">
+                    <div class="issue-img-placeholder"><img src="../images/84770f_3e8a581ece8b4ccca12d7f49880e1051~mv2.avif" alt=""></div>
+                    <div class="issue-title"><a href="./issue.html">Max out Your Exoskeleton & Never Die Again</a></div>
+                    <div class="issue-footer">
+                        <span>👁 0</span>
+                        <div class="like-button"> 
+                            <div class="heart-container" title="Like">
+                                <input type="checkbox" class="checkbox">
+                                <div class="svg-container">
+                                    <svg viewBox="0 0 24 24" class="svg-outline" xmlns="http://www.w3.org/2000/svg"><path d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Zm-3.585,18.4a2.973,2.973,0,0,1-3.83,0C4.947,16.006,2,11.87,2,8.967a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,8.967a1,1,0,0,0,2,0,4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,8.967C22,11.87,19.053,16.006,13.915,20.313Z"></path></svg>
+                                    <svg viewBox="0 0 24 24" class="svg-filled" xmlns="http://www.w3.org/2000/svg"><path d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Z"></path></svg>
+                                    <svg class="svg-celebrate" width="100" height="100" xmlns="http://www.w3.org/2000/svg"><polygon points="10,10 20,20"></polygon><polygon points="10,50 20,50"></polygon><polygon points="20,80 30,70"></polygon><polygon points="90,10 80,20"></polygon><polygon points="90,50 80,50"></polygon><polygon points="80,80 70,70"></polygon></svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- მეორე ბარათი -->
+                <div class="issue-card">
+                    <div class="issue-img-placeholder"><img src="../images/84770f_3e8a581ece8b4ccca12d7f49880e1051~mv2.avif" alt=""></div>
+                    <div class="issue-title"><a href="./issue.html">How to Build a Lasting Moonrock Mine</a></div>
+                    <div class="issue-footer">
+                        <span>👁 0</span>
+                        <div class="like-button"> 
+                            <div class="heart-container" title="Like">
+                                <input type="checkbox" class="checkbox">
+                                <div class="svg-container">
+                                    <svg viewBox="0 0 24 24" class="svg-outline" xmlns="http://www.w3.org/2000/svg"><path d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Zm-3.585,18.4a2.973,2.973,0,0,1-3.83,0C4.947,16.006,2,11.87,2,8.967a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,8.967a1,1,0,0,0,2,0,4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,8.967C22,11.87,19.053,16.006,13.915,20.313Z"></path></svg>
+                                    <svg viewBox="0 0 24 24" class="svg-filled" xmlns="http://www.w3.org/2000/svg"><path d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Z"></path></svg>
+                                    <svg class="svg-celebrate" width="100" height="100" xmlns="http://www.w3.org/2000/svg"><polygon points="10,10 20,20"></polygon><polygon points="10,50 20,50"></polygon><polygon points="20,80 30,70"></polygon><polygon points="90,10 80,20"></polygon><polygon points="90,50 80,50"></polygon><polygon points="80,80 70,70"></polygon></svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="Comments">
+            <div class="comments-box">
+                <div class="comments-header">
+                    <h3>Comments</h3>
+                </div>
+                <div class="comment-input-wrapper">
+                    <input type="text" placeholder="Write a comment...">
+                </div>
+            </div>
+        </div>
     </div>
 
-</div>
-
-</div>
-
-
+    <div class="footer-container">
+        <div class="footer-email">
+            <a href="mailto:info@mysite.com">info@mysite.com</a>
+        </div>
+        <div class="footer-socials">
+            <a href="" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="" target="_blank" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a href="" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="footer-copy">
+            <p>© 2035 by REVO. Powered and secured by <a href="" target="_blank">Wix</a></p>
+        </div>
     </div>
+
+    
+    <script>
+        const burgerBtn = document.getElementById('burgerBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuLinks = document.querySelectorAll('.mobile-nav-list a');
+
+        burgerBtn.addEventListener('click', () => {
+            burgerBtn.classList.toggle('open');
+            mobileMenu.classList.toggle('active');
+        });
+
+        menuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                burgerBtn.classList.remove('open');
+                mobileMenu.classList.remove('active');
+            });
+        });
+    </script>
 </body>
 </html>

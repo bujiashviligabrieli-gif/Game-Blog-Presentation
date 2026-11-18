@@ -1,0 +1,251 @@
+body{
+    background-color: rgb(13, 7, 67);
+     margin: 0;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 52px;
+}
+body img{
+    object-fit: cover;
+}
+@font-face {
+    font-family: Oswald;
+    src: url(../fonts/owswald/static/Oswald-Medium.ttf);
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat/static/Montserrat-Medium.ttf);
+}
+@font-face {
+    font-family: OswaldLight;
+    src: url(../fonts/owswald/static/Oswald-Light.ttf);
+}
+@font-face {
+    font-family: MontserratLight;
+    src: url(../fonts/Montserrat/static/Montserrat-Light.ttf);
+}
+.header-iframe {
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 1200px;
+    height: 200px;
+    z-index: 10;                 
+    display: block;
+    border: none;
+}
+.burger-btn,
+.mobile-menu-overlay {
+    display: none;
+}
+
+.Roster-txt{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    
+}
+.title{
+    font-family: 'Oswald', sans-serif;
+    color: aqua;
+    font-size: 90px;
+    padding-top: 40px;
+}
+.paragraph{
+    font-family: 'OswaldLight', sans-serif;
+    width: 50%;
+    height: 100%;
+    font-size: 22px;
+    text-align: center;
+    color: white;
+
+}
+.container{
+    background-color: rgb(20, 20, 95);
+    width: 100%;
+    height: auto;
+}
+.About-Gamers{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+}
+.About-Gamers-2{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.Gamer-photo{
+height: 100%;
+width: 50%;
+}
+.Gamer-photo img{
+    width: 100%;
+    height: 100%;
+}
+.Gamer-description{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    
+}
+.Name{
+    font-family: 'Oswald', sans-serif;
+color: aqua;
+font-size: 35px;
+width: 60%;
+}
+.Username{
+    font-family: 'MontserratLight', sans-serif;
+    color: white;
+    font-size: 24px;
+width: 60%;
+}
+.about{
+    font-family: 'MontserratLight', sans-serif;
+    color: white;
+    font-size: 19px;
+width: 60%;
+line-height: 1.3;
+}
+.footer-iframe {
+    width: 100%;
+    height: 728px;
+    display: block;
+    border: none;
+    background-color: rgb(26, 26, 115);
+}
+
+@media screen and (max-width: 774px) {
+.header-iframe {
+        display: none !important;
+    }
+
+    
+    .burger-btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 21px;
+        position: fixed;
+        top: 30px;
+        right: 30px;
+        z-index: 1001; 
+        cursor: pointer;
+    }
+
+    .burger-btn .bar {
+        width: 100%;
+        height: 3px;
+        background-color: #ffffff;
+        transition: all 0.3s ease;
+        border-radius: 2px;
+    }
+
+    
+    .burger-btn.open .bar:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+
+    .burger-btn.open .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .burger-btn.open .bar:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+
+    
+    .mobile-menu-overlay {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #020826; 
+        z-index: 1000;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+    
+    .mobile-menu-overlay.active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .mobile-nav-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .mobile-nav-list a {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 24px;
+        color: #ffffff;
+        text-decoration: none;
+        letter-spacing: 0.5px;
+        transition: color 0.3s ease;
+    }
+
+    
+    .mobile-nav-list a.active-link,
+    .mobile-nav-list a:hover {
+        color: rgb(0, 172, 235);
+    }
+
+  
+    .mobile-socials {
+        margin-top: 50px;
+        display: flex;
+        gap: 25px;
+    }
+
+    .mobile-socials a {
+        color: #ffffff;
+        font-size: 18px;
+        transition: color 0.3s ease;
+    }
+
+    .mobile-socials a:hover {
+        color: rgb(0, 172, 235);
+    }
+    .container{
+        
+    }
+    .About-Gamers, .About-Gamers-2{
+width: 100%;
+height: 50%;
+flex-direction: column;
+    }
+    .Gamer-photo, .Gamer-description{
+        width: 100%;
+        height: 50%;
+    }
+    .Gamer-description{
+        padding: 10px;
+    }
+}

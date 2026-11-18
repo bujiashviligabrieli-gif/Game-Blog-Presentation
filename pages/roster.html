@@ -3,9 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/roaster.css">
     <title>Document</title>
 </head>
 <body>
+    <iframe class="header-iframe" src="../pages/header.html" frameborder="0" scrolling="no"></iframe>
+
     
+    <div class="burger-btn" id="burgerBtn">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+
+    <div class="mobile-menu-overlay" id="mobileMenu">
+        <ul class="mobile-nav-list">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./updates.html">Updates</a></li>
+            <li><a href="./roster.html">Roster</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+        <div class="mobile-socials">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+    <div class="Roster-txt">
+ <div class="title"><h1>Roaster</h1></div>
+ <div class="paragraph"><p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me
+to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.</p></div>
+
+    </div>
+    <div class="container">
+     <div class="About-Gamers">
+       <div class="Gamer-photo">
+          <img src="../images/ea71bb_8621ee24db344ebe8e6a06e92079f708~mv2_d_5485_3586_s_4_2.avif" alt="Gamer">
+       </div>
+       <div class="Gamer-description">
+          <div class="Name"><p>Nicolai Andresen</p></div>
+          <div class="Username"><p>BRaNz</p></div>
+          <div class="about"><p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.</p></div>
+       </div>
+     </div>
+
+
+<div class="About-Gamers-2">
+       <div class="Gamer-photo">
+          <img src="../images/ea71bb_9d28d08ff0e54cdb996c4883cb61bf20~mv2_d_5485_3586_s_4_2.avif" alt="Gamer">
+       </div>
+       <div class="Gamer-description">
+          <div class="Name"><p>Hideo Horiuchi</p></div>
+          <div class="Username"><p>Floosha</p></div>
+          <div class="about"><p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.</p></div>
+       </div>
+     </div>
+
+      <div class="About-Gamers">
+       <div class="Gamer-photo">
+          <img src="../images/ea71bb_d8da7b2c55c7447c94a0f3e367fd3682~mv2_d_5485_3586_s_4_2.avif" alt="Gamer">
+       </div>
+       <div class="Gamer-description">
+          <div class="Name"><p>Erika Holzman</p></div>
+          <div class="Username"><p>Dragen</p></div>
+          <div class="about"><p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.</p></div>
+       </div>
+     </div>
+      
+<div class="About-Gamers-2">
+       <div class="Gamer-photo">
+          <img src="../images/ea71bb_ecd58d906e104f4aab9c438bf572eda8~mv2_d_5485_3586_s_4_2.avif" alt="Gamer">
+       </div>
+       <div class="Gamer-description">
+          <div class="Name"><p>Scotty Kim</p></div>
+          <div class="Username"><p>Crushd</p></div>
+          <div class="about"><p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.</p></div>
+       </div>
+     </div>
+
+     <div class="About-Gamers">
+       <div class="Gamer-photo">
+          <img src="../images/ea71bb_3858f73a4f8a4b7392e0f472cf2d4b34~mv2_d_5485_3586_s_4_2.avif" alt="Gamer">
+       </div>
+       <div class="Gamer-description">
+          <div class="Name"><p>Steffen Hueber</p></div>
+          <div class="Username"><p>Siggy</p></div>
+          <div class="about"><p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.</p></div>
+       </div>
+     </div>
+    </div>
+    <iframe src="./footer.html" frameborder="0" scrolling='no' class="footer-iframe"></iframe>
+
+    <script>
+    const burgerBtn = document.getElementById('burgerBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const menuLinks = document.querySelectorAll('.mobile-nav-list a');
+
+    
+    burgerBtn.addEventListener('click', () => {
+        burgerBtn.classList.toggle('open');
+        mobileMenu.classList.toggle('active');
+    });
+
+    
+    menuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            burgerBtn.classList.remove('open');
+            mobileMenu.classList.remove('active');
+        });
+    });
+</script>
 </body>
 </html>
