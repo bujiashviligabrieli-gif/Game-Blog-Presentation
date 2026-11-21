@@ -88,15 +88,51 @@ body a {
     transition: 0.3s;
 }
 
-.search-bar {
-    display: flex;
-    align-items: center;
-    padding: 10px;
+ .search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50%;
+  width: 30%;
+  border-bottom: 1.5px solid #0099ff; 
 }
 
-.search-icon {
-    color: aqua;
-    cursor: pointer;
+.search-bar input,
+.search-bar textarea {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #0099ff;
+  caret-color: #0099ff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  resize: none;
+  overflow: hidden;
+  line-height: 1.4;
+}
+
+.search-bar input::placeholder,
+.search-bar textarea::placeholder {
+  color: #0099ff;
+  opacity: 1;
+}
+
+.search-bar button {
+  background: transparent;
+  border: none;
+  color: #0099ff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0 0 12px;
+  transition: opacity 0.2s ease;
+}
+
+.search-bar button:hover {
+  opacity: 0.75;
 }
 
 .issue-box-link {
@@ -308,19 +344,59 @@ body a {
     color: aqua;
 }
 
+.svg{
+    display: none;
+}
+.svg svg path{
+    fill: white !important;
+}
+.txt-hd {
+    font-size: 18px;
+}
 
+.txt-h2 {
+    margin-bottom: 10px;
+}
+
+.txt-h2 a {
+    font-family: 'Oswald', sans-serif;
+    color: white;
+}
+
+.txt-p a {
+    font-size: 17px;
+    color: white;
+}
+
+.txt-hd a {
+    text-decoration: none;
+}
    @media screen and (max-width: 936px) {
     .header-iframe {
         display: none !important;
     }
-
+      .svg{
+        display: block;
+        height: 100px;
+        width: 184px;
+        position: absolute;
+        left: 0;
+        display: flex;
+        align-items: center;
+        gap: 3px;
+        margin-left: 10px;
+      }
+      .svg svg{
+        height: 100%;
+        width: 100%;
+      }
     .burger-btn {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         width: 30px;
         height: 21px;
-        position: fixed;
+        position: absolute;
         top: 30px;
         right: 30px;
         z-index: 1001;
@@ -442,7 +518,7 @@ body a {
 
     .issue-box-photo {
         width: 100%;
-        height: 240px;
+        
     }
 
     .issue-box-about {

@@ -3,9 +3,182 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Document</title>
 </head>
 <body>
+    <iframe class="header-iframe" src="../pages/header.html" frameborder="0" scrolling="no"></iframe>
+
     
+    <div class="burger-btn" id="burgerBtn">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+
+    <div class="mobile-menu-overlay" id="mobileMenu">
+        <ul class="mobile-nav-list">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./updates.html">Updates</a></li>
+            <li><a href="./roster.html">Roster</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+        <div class="mobile-socials">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+
+
+    <div class="container">
+
+        <div class="title">
+         <div class="title-txt">
+          <p>Contact Us</p>
+         </div>
+         <div class="scroll-FAQ">
+         <p>Scroll Down to Read Our FAQs</p>
+         </div>
+
+        </div>
+
+       <div class="bg-form">
+        <div class="bg-image">
+          <img src="../images/ea71bb_1261fea1765e413f9ad22cb9c974b05e~mv2_d_4762_3175_s_4_2.avif" alt="-Gamer-Guy">
+        </div>
+        <div class="form">
+  <div class="form-wrapper">
+    <p class="form-desc">
+      I'm a paragraph. Click here to add your own text and edit me. It’s
+      easy. Just click “Edit Text” or double click me to add your own
+      content and make changes to the font.
+    </p>
+
+    <form class="contact-form" novalidate>
+      <div class="form-row">
+        <div class="form-group has-error">
+          <label for="firstName">First name *</label>
+          <input type="text" id="firstName" name="firstName" required />
+          
+        </div>
+
+        <div class="form-group">
+          <label for="lastName">Last name *</label>
+          <input type="text" id="lastName" name="lastName" required />
+          
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" required />
+        
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+      </div>
+
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+  </div>
+</div>
+       </div>
+       
+       <div class="FAQs">
+         <div class="FAQ-container">
+           <div class="FAQ-header">
+             <div class="FAQ-title">
+                <p>Frequently asked questions</p>
+             </div>
+             <div class="search-bar">
+  <input type="text" placeholder="Looking for something?" />
+  <button type="submit" aria-label="Search">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="11" cy="11" r="8"></circle>
+      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+    </svg>
+  </button>
+</div>
+           </div>
+
+           <div class="FAQ-navbar">
+            <div class="a-1">
+             <a href="./contact.html">General</a>
+            </div>
+            <div class="a-2">
+              <a href="./contact.html">Setting up FAQs</a>
+            </div>
+           </div>
+           <section class="faq-section">
+  <div class="faq-list">
+
+    
+    <details class="faq-item" open>
+      <summary class="faq-question">
+        <span>What is an FAQ section?</span>
+        <span class="faq-arrow" aria-hidden="true"></span>
+      </summary>
+      <div class="faq-answer">
+        <p>
+          An FAQ section can be used to quickly answer common questions about your business like "Where do you ship to?", "What are your opening hours?", or "How can I book a service?".
+        </p>
+        <div class="faq-socials" aria-label="Share answer">
+          <a href="#facebook" aria-label="Facebook">f</a>
+          <a href="#x" aria-label="X">𝕏</a>
+          <a href="#linkedin" aria-label="LinkedIn">in</a>
+          <a href="#link" aria-label="Copy link">🔗</a>
+        </div>
+      </div>
+    </details>
+
+
+    <details class="faq-item">
+      <summary class="faq-question">
+        <span>Why do FAQs matter?</span>
+        <span class="faq-arrow" aria-hidden="true"></span>
+      </summary>
+      <div class="faq-answer">
+        <p>
+          FAQs help visitors find clear answers right away, reduce repetitive support messages, and build trust before they contact you.
+        </p>
+      </div>
+    </details>
+
+
+    <details class="faq-item">
+      <summary class="faq-question">
+        <span>Where can I add my FAQs?</span>
+        <span class="faq-arrow" aria-hidden="true"></span>
+      </summary>
+      <div class="faq-answer">
+        <p>
+          You can place an FAQ section on your Contact page, product pages, or a dedicated Help page so users can reach it easily.
+        </p>
+      </div>
+    </details>
+
+  </div>
+</section>
+         </div>
+       </div>
+      <div class="footer-container">
+        <div class="footer-email">
+            <a href="mailto:info@mysite.com">info@mysite.com</a>
+        </div>
+        <div class="footer-socials">
+            <a href="https://www.facebook.com/gabrieli.bujiashvili" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://x.com/Gabrooo_999" target="_blank" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.youtube.com/@GaboBuji" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="footer-copy">
+            <p>© 2035 by REVO. Powered and secured by <a href="" target="_blank">Wix</a></p>
+        </div>
+    </div>
+    </div>
 </body>
 </html>

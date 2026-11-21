@@ -9,7 +9,7 @@ body {
 
 .site-footer {
     width: 100%;
-    height: 100vh;
+    height: 680px;
     background-color: rgb(10, 10, 57);
     /* padding: 50px 20px; */
     display: flex;
@@ -153,4 +153,22 @@ body {
 
 .footer-copy a:hover {
     opacity: 0.8;
+}
+@media screen and (max-width: 770px) {
+  .mailing-section{
+    height: auto;
+  }
+  .footer-container{
+    height: auto;
+    padding-top: 10px;
+  }
+}
+@media screen and (max-width: 390px) {
+    
+    .mailing-section h2{
+        padding: 30px;
+    }
+    .mailing-subtitle{
+         padding: 30px;
+    }
 }
