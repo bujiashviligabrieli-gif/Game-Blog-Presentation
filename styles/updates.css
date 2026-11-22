@@ -119,6 +119,8 @@ body a {
   opacity: 1;
 }
 
+
+
 .search-bar button {
   background: transparent;
   border: none;
@@ -307,7 +309,7 @@ body a {
   100% { transform: scale(1); }
 }
 
-/* Footer სტილები */
+
 .footer-container {
     display: flex;
     flex-direction: column;
@@ -390,6 +392,7 @@ body a {
         height: 100%;
         width: 100%;
       }
+      
     .burger-btn {
         display: flex;
         flex-direction: column;

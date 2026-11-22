@@ -112,13 +112,13 @@
     const mobileMenu = document.getElementById('mobileMenu');
     const menuLinks = document.querySelectorAll('.mobile-nav-list a');
 
-    // ღილაკზე დაჭერისას გახსნა/დახურვა
+    
     burgerBtn.addEventListener('click', () => {
         burgerBtn.classList.toggle('open');
         mobileMenu.classList.toggle('active');
     });
 
-    // ლინკზე დაჭერისას მენიუ ავტომატურად დაიხუროს
+    
     menuLinks.forEach(link => {
         link.addEventListener('click', () => {
             burgerBtn.classList.remove('open');

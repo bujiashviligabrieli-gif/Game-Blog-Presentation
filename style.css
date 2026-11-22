@@ -161,7 +161,7 @@ body a {
     line-height: 1.6;
 }
 
-/* LATEST UPDATES SECTION */
+
 .Latest-updates {
     width: 100%;
     min-height: 100vh;
@@ -476,7 +476,7 @@ body a {
 
 
 @media screen and (max-width: 768px) {
-    /* Hero სექცია */
+    
     .hero-text-box {
         top: 30vh;
         left: 5%;
