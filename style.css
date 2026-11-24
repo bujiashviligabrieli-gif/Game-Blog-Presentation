@@ -523,7 +523,7 @@ body a {
         max-width: 90%;
     }
     .hero-text-box h1 {
-        font-size: 70px;
+        font-size: 40px;
     }
     .hero-text-box p {
         font-size: 22px;
@@ -587,9 +587,7 @@ body a {
 
 
 @media screen and (max-width: 480px) {
-    .hero-text-box h1 {
-        font-size: 60px;
-    }
+   
     .hero-text-box p {
         font-size: 18px;
     }
