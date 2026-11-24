@@ -163,9 +163,11 @@ body {
 @media screen and (max-width: 390px) {
     
     .mailing-section h2{
-        padding: 30px;
+        padding: 7px;
+        text-align: center;
     }
     .mailing-subtitle{
-         padding: 30px;
+         padding: 10px;
+         text-align: center;
     }
 }

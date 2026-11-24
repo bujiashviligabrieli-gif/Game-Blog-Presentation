@@ -79,17 +79,7 @@ body a {
     transition: 0.4s;
 }
 
-.search-bar {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding: 17px 0;
-}
 
-.search-icon {
-    color: aqua;
-    cursor: pointer;
-}
 
 
 .Post {
@@ -660,7 +650,7 @@ body a {
         height: auto;
         align-items: flex-start;
         gap: 15px;
-        margin-bottom: 20px;
+        margin-top: 20px;
     }
 
     .links {
@@ -668,9 +658,6 @@ body a {
         font-size: 14px;
     }
 
-    .search-bar {
-        padding: 0;
-    }
 
     .Post {
         padding: 30px 0;
