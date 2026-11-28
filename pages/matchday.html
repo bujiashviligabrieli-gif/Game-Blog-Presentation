@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/matchday.css">
+    <title>Game On | REVO eSports Team</title>
+</head>
+<body>
+    <iframe class="header-iframe" src="./header.html" frameborder="0" scrolling="no"></iframe>
+
+    <div class="burger-btn" id="burgerBtn">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+
+    <div class="mobile-menu-overlay" id="mobileMenu">
+        <ul class="mobile-nav-list">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./updates.html">Updates</a></li>
+            <li><a href="./roster.html">Roster</a></li>
+            <li><a href="./matchday.html" class="active-link">Game On</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <div class="Game-hero">
+            <img class="Game-hero-img" src="../images/ea71bb_4884b1deb29244bebcbd4f6c97bd8f7a~mv2_d_5199_2930_s_4_2.avif" alt="REVO players preparing for competition">
+            <div class="Game-hero-shade"></div>
+            <div class="hero-text-box">
+                <p class="eyebrow"><span></span> REVO ESPORTS TEAM</p>
+                <h1>GAME<br><b>ON.</b></h1>
+                <p class="Game-hero-p">Built by players. Driven by the next win.<br>Welcome to our arena.</p>
+                <a class="button" href="./roster.html">MEET THE ROSTER <span>&#8599;</span></a>
+            </div>
+            <div class="Game-hero-caption"><span>01</span><i></i><span>READY WHEN YOU ARE</span></div>
+            <div class="Game-hero-side-label">PLAY / COMPETE / REPEAT</div>
+        </div>
+
+        <div class="About-us">
+            <div class="About-us-content">
+                <p class="eyebrow">WELCOME TO THE TEAM</p>
+                <h2>WE PLAY<br>TO <b>CHANGE THE GAME.</b></h2>
+                <p>Every match is a new chance to push further. Get to know the players, catch the latest updates, and follow REVO as we take on the competition.</p>
+                <a class="text-link" href="./roster.html">MEET OUR CREW <span>&#8594;</span></a>
+            </div>
+            <div class="About-us-image">
+                <img src="../images/ea71bb_b21d9cef0e6d436d94b641c60f0edfc2~mv2_d_6609_4406_s_4_2%20(1).avif" alt="A player focused on the match">
+                <div class="image-tag">FOCUS. TEAMWORK. REVO.</div>
+                <div class="image-index">R / 08</div>
+            </div>
+        </div>
+
+        <div class="Latest-updates">
+            <div class="Upd-1">
+                <div><p class="eyebrow">FROM OUR UNIVERSE</p><h2>ENTER THE <b>SPOTLIGHT</b></h2></div>
+                <a class="text-link" href="./updates.html">ALL UPDATES <span>&#8594;</span></a>
+            </div>
+            <div class="Upd-2">
+                <a class="Upd-img-1 card-wide" href="./updates.html">
+                    <img src="../images/84770f_3e8a581ece8b4ccca12d7f49880e1051~mv2.avif" alt="A massive futuristic carrier in space">
+                    <div class="card-shade"></div><div class="card-number">01 / FEATURE</div>
+                    <div class="card-title">THE LEVIATHAN<br>CARRIER XT <i>&#8599;</i></div>
+                </a>
+                <a class="Upd-img-2" href="./updates.html">
+                    <img src="../images/84770f_c3b39afdc1fe43b5ab024b638e69d1cc~mv2.avif" alt="A distant planet and spacecraft">
+                    <div class="card-shade"></div><div class="card-number">02 / EXPLORE</div>
+                    <div class="card-title">BEYOND THE<br>HORIZON <i>&#8599;</i></div>
+                </a>
+                <a class="Upd-img-3" href="./updates.html">
+                    <img src="../images/84770f_fb90404e629b4f249950d6b66895badb~mv2.avif" alt="A futuristic world ready for discovery">
+                    <div class="card-shade"></div><div class="card-number">03 / DISCOVER</div>
+                    <div class="card-title">YOUR NEXT<br>MISSION <i>&#8599;</i></div>
+                </a>
+            </div>
+        </div>
+
+        <div class="Join-us">
+            <img src="../images/ea71bb_9d28d08ff0e54cdb996c4883cb61bf20~mv2_d_5485_3586_s_4_2.avif" alt="A REVO competitor ready for action">
+            <div class="Join-us-shade"></div>
+            <div class="Join-us-content">
+                <p class="eyebrow">THE NEXT ROUND STARTS HERE</p>
+                <h2>READY<br>TO <b>PLAY?</b></h2>
+                <a class="button" href="./contact.html">GET IN TOUCH <span>&#8599;</span></a>
+            </div>
+            <div class="Join-us-code">REVO / GAME ON</div>
+        </div>
+
+        <div class="page-footer">
+            <a href="../index.html" class="footer-brand">REVO<span> eSports Team</span></a>
+            <div>BUILT FOR THE GAME.</div>
+            <a href="../index.html">BACK TO HOME &#8593;</a>
+        </div>
+    </div>
+
+    <script>
+        const burgerBtn = document.getElementById('burgerBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        burgerBtn.addEventListener('click', () => {
+            const isOpen = mobileMenu.classList.toggle('active');
+            burgerBtn.classList.toggle('open', isOpen);
+        });
+        mobileMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+            mobileMenu.classList.remove('active');
+            burgerBtn.classList.remove('open');
+        }));
+    </script>
+</body>
+</html>

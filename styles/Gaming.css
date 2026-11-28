@@ -1,0 +1,264 @@
+body {
+    background-color: rgb(13, 7, 67);
+    margin: 0;
+    overflow-x: hidden;
+}
+
+body a {
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: Oswald;
+    src: url(../fonts/owswald/static/Oswald-Medium.ttf);
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat/static/Montserrat-Medium.ttf);
+}
+@font-face {
+    font-family: OswaldLight;
+    src: url(../fonts/owswald/static/Oswald-Light.ttf);
+}
+@font-face {
+    font-family: MontserratLight;
+    src: url(../fonts/Montserrat/static/Montserrat-Light.ttf);
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 60px;
+}
+
+.header-iframe {
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 200px;
+    z-index: 10;                 
+    display: block;
+    border: none;
+}
+.burger-btn,
+.mobile-menu-overlay {
+    display: none;
+}
+.Tips{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+.fst-image{
+    background-color: antiquewhite;
+width: 50%;
+height: 100%;
+}
+.fst-image img{
+    height: 100%;
+    width: 100%;
+    transition: filter 0.5s ease;
+}
+.fst-image img:hover{
+    filter: brightness(0.7);
+    transition: 0.5s; 
+}
+.Gamer-ToolBox{
+    background-color: rgb(31, 23, 90);
+width: 50%;
+height: 100%;
+display: flex;
+flex-direction: column;
+}
+.ToolBox-header{
+ width: 100%;
+ height: 30%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.ToolBox-header p{
+    font-family: 'Oswald', sans-serif;
+    color: rgb(127, 63, 211);
+    font-size: 80px;
+    text-align: center;
+    animation: slideUpFade 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.3s forwards,
+               neonPulse 2s ease-in-out 0.8s infinite alternate;
+}
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-60px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+@keyframes slideUpFade {
+    0% {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes neonPulse {
+    0% {
+        text-shadow: 0 0 10px rgba(79, 12, 95, 0.3);
+    }
+    100% {
+        text-shadow: 0 0 25px rgba(153, 55, 210, 0.85), 0 0 45px rgba(0, 172, 235, 0.4);
+    }
+}
+
+.ToolBox-nav{
+    width: 100%;
+ height: 40%; 
+ display: flex;
+flex-direction: row;
+}
+.link-home{
+width: 40%;
+height: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ animation: floatRightLeft 3s ease-in-out infinite;
+}
+@keyframes floatRightLeft {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-15px); 
+  }
+}
+.link-to-home {
+    width: 140px;
+    height: 45px;
+    border: 3px solid rgb(199, 74, 199);
+    border-radius: 25px;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.link-to-home a, .link-to-home-a-txt {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link-to-home p {
+    color: rgb(188, 82, 223);
+    font-family: 'OswaldLight', sans-serif;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.link-to-home:hover {
+    background-color: rgb(200, 82, 223);
+}
+
+.link-to-home:hover .link-to-home-a-txt p {
+    color: white;
+}
+.nav-image{
+width: 20%;
+height: 100%;
+cursor: pointer;
+animation: floatUpDown 3s ease-in-out infinite;
+}
+.nav-image img{
+width: 100%;
+height: 100%;
+border-radius: 15px;
+object-fit: cover;
+}
+@keyframes floatUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px); 
+  }
+}
+.nav-image:hover{
+    animation-play-state: paused;
+}
+.link-roaster{
+width: 40%;
+height: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ animation: floatRightLeft 3s ease-in-out infinite;
+}
+.link-to-roster {
+    width: 140px;
+    height: 45px;
+    border: 3px solid rgb(223, 82, 218);
+    border-radius: 25px;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.link-to-roster a, .link-to-roster-a-txt {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link-to-roster p {
+    color: rgb(216, 82, 223);
+    font-family: 'OswaldLight', sans-serif;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.link-to-roster:hover {
+    background-color: rgb(204, 82, 223);
+}
+
+.link-to-roster:hover .link-to-roster-a-txt p {
+    color: white;
+}
+.ToolBox-footer{
+     width: 100%;
+ height: 30%;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ToolBox-footer p{
+    font-family: 'Oswald', sans-serif;
+    color: rgb(173, 53, 189);
+    font-size: 40px;
+    text-align: center;
+    animation: slideUpFade 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.3s forwards,
+               neonPulse 2s ease-in-out 0.8s infinite alternate;
+}
